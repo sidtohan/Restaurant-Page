@@ -1,7 +1,7 @@
 import KnifeFork from '../knife-fork.svg'
 import HeroImage from '../hero-logo.png'
 
-const generateHero = (() => {
+const generateHeroHome = (() => {
   const generateLeftPart = () => {
 
     const leftPart = document.createElement('div');
@@ -52,5 +52,5 @@ const generateHero = (() => {
   }
 })()
 
-export default generateHero;
+export default generateHeroHome;
 

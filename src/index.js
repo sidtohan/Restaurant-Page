@@ -1,8 +1,11 @@
 import generateNav from './modules/nav';
-import generateHero from './modules/hero-home';
+import generateHeroHome from './modules/hero-home';
+import generateItemCard from './modules/hero-menu';
+
 import './styles/style.css';
 import './styles/nav.css'
-import './styles/hero.css';
+import './styles/hero-home.css';
+import './styles/hero-menu.css'
 
 let current = "Home";
 
@@ -21,13 +24,31 @@ const home = () => {
   nav.appendChild(generateNav.generateNavBar());
 
   // hero 
-  hero.appendChild(generateHero.generateLeftPart());
-  hero.appendChild(generateHero.generateRightPart());
+  hero.appendChild(generateHeroHome.generateLeftPart());
+  hero.appendChild(generateHeroHome.generateRightPart());
 
 
   // appending the requiured sections
   document.body.appendChild(nav);
   document.body.appendChild(hero);
+}
+
+const menu =  () => {
+  const nav = document.createElement('div');
+  const menuItems = document.createElement('div');
+
+  menuItems.id = 'menu-items';
+  nav.id = 'nav';
+  nav.appendChild(generateNav.generateHeading());
+  nav.appendChild(generateNav.generateNavBar());
+
+  for(let i =0; i< 9; i++){
+    menuItems.appendChild(generateItemCard());
+  }
+
+  document.body.appendChild(nav);
+  document.body.appendChild(menuItems);
+
 }
 
 const tabClicks = () => {
@@ -43,18 +64,16 @@ const tabClicks = () => {
       if (clicked === 'Home') {
         document.body.innerHTML = '';
         home();
-        tabClicks();
-        return;
 
       } else if (clicked === "Menu") {
-        console.log("Menu");
-        current = clicked;
-        return;
+        document.body.innerHTML = '';
+        menu();
+  
       } else {
         console.log("Credits");
-        current = clicked;
-        return;
       }
+      tabClicks();
+      current = clicked;
     })
   }
 }
