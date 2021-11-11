@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+#nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.main-heading{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;  
+  font-size: 30px;
+  line-height: 45px;
+
+  color: rgba(2, 0, 117, 0.83);
+}
+
+
+
+.nav-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 10px;
+  gap: 15px;
+
+}
+
+body{
+  background: url('./blue-snow.png');
+}
+
+body, html{
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
