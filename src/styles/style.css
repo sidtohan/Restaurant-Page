@@ -10,12 +10,35 @@
 }
 
 #hero{
+  animation: slide-in-hero 0.5s ease-in-out forwards;
+
   box-sizing: border-box;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 100px;
+}
+
+@keyframes slide-in-hero {
+  0%{
+    opacity: 0;
+    transform: translateX(+100%);
+  }
+  100%{
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes slide-out-hero {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
 }
 
 body{
