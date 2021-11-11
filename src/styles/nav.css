@@ -1,0 +1,23 @@
+.main-heading{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;  
+  font-size: 30px;
+  line-height: 45px;
+
+  color: rgba(2, 0, 117, 0.83);
+}
+
+.nav-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 10px;
+  gap: 20px;
+}
+
+.nav-item{
+  cursor: pointer;
+  user-select: none;
+}

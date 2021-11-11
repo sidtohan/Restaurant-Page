@@ -11,18 +11,31 @@ const generateNav = (() => {
     navBar.classList.add('nav-links');
     const home = document.createElement('div');
     home.textContent = "Home";
+    home.classList.add('nav-item');
+
     const menu = document.createElement('div');
     menu.textContent = "Menu";
+    menu.classList.add('nav-item');
+
     const credits = document.createElement('div');
     credits.textContent = "Credits";
+    credits.classList.add('nav-item');
 
     navBar.appendChild(home);
     navBar.appendChild(menu);
     navBar.appendChild(credits);
 
+    addListenersNavLinks(navBar);
     return navBar;
   }
 
+  const addListenersNavLinks = (navBar) => {
+    for(let item of navBar.children){
+      item.addEventListener('click', e => {
+        console.log(e.target);
+      })
+    }
+  }
   return {
     generateHeading,
     generateNavBar

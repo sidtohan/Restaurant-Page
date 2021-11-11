@@ -1,6 +1,7 @@
 import generateNav from './modules/nav';
-import generateHero from './modules/hero';
+import generateHero from './modules/hero-home';
 import './styles/style.css';
+import './styles/nav.css'
 import './styles/hero.css';
 
 const hero = document.createElement('div');
@@ -21,7 +22,6 @@ const homePage = () => {
   // hero 
   hero.appendChild(generateHero.generateLeftPart());
   hero.appendChild(generateHero.generateRightPart());
-
 }
 
 homePage();
