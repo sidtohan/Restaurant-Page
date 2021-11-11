@@ -25,17 +25,9 @@ const generateNav = (() => {
     navBar.appendChild(menu);
     navBar.appendChild(credits);
 
-    addListenersNavLinks(navBar);
     return navBar;
   }
 
-  const addListenersNavLinks = (navBar) => {
-    for(let item of navBar.children){
-      item.addEventListener('click', e => {
-        console.log(e.target);
-      })
-    }
-  }
   return {
     generateHeading,
     generateNavBar

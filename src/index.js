@@ -18,6 +18,13 @@ const homePage = () => {
   // nav
   nav.appendChild(generateNav.generateHeading());
   nav.appendChild(generateNav.generateNavBar());
+  const tabs = nav.querySelector('.nav-links').children;
+  for (let tab of tabs) {
+    tab.addEventListener('click', e => {
+      console.log(e.target);
+      e.stopPropagation();
+    })
+  }
 
   // hero 
   hero.appendChild(generateHero.generateLeftPart());

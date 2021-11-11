@@ -29,6 +29,7 @@ const generateHero = (() => {
     letsEat.appendChild(letsEatText);
     letsEat.appendChild(knifeFork);
 
+    letsEat.addEventListener('click', moveToMenu);
     leftPart.appendChild(subTitle);
     leftPart.appendChild(title);
     leftPart.appendChild(letsEat);
@@ -36,6 +37,9 @@ const generateHero = (() => {
     return leftPart;
   }
 
+  const moveToMenu = e => {
+    console.log(e.target);
+  }
   const generateRightPart = () => {
     const logo = new Image();
     logo.src = HeroImage;

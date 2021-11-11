@@ -35,6 +35,9 @@
 }
 
 .lets-eat{
+  cursor: pointer;
+  user-select: none;
+
   margin-top: 30px;
   display: flex;
   flex-direction: row;
