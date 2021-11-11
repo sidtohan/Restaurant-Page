@@ -1,4 +1,5 @@
 import KnifeFork from './knife-fork.svg'
+import HeroImage from './hero-logo.png'
 
 const generateHero = (() => {
   const generateLeftPart = () => {
@@ -35,8 +36,15 @@ const generateHero = (() => {
     return leftPart;
   }
 
+  const generateRightPart = () => {
+    const logo = new Image();
+    logo.src = HeroImage;
+    logo.classList.add('hero-logo');
+    return logo;
+  }
   return {
     generateLeftPart,
+    generateRightPart
   }
 })()
 

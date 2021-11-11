@@ -2,18 +2,24 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 30px 100px;
-  width: 60%;
+  justify-content: center;
+  padding: 50px 0;
+  width: 50%;
   height: 100%;
+}
+
+.hero-logo{
+  display: block;
+  align-self: flex-start;
+  width: 50%;
 }
 
 .title{
   font-family: Poppins;
   font-style: normal;
   font-weight: 700;
-  font-size: 60px;
-  line-height: 100px;
+  font-size: 45px;
+  line-height: 70px;
 }
 
 .sub-title{
@@ -21,7 +27,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
-  line-height: 52px;
+  line-height: 45px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
@@ -40,6 +46,8 @@
   width: fit-content;
   background: #020075D4;
   border-radius: 60px;
+
+  border: none;
 }
 
 .lets-eat-text{

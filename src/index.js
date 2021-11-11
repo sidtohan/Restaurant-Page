@@ -20,6 +20,7 @@ const homePage = () => {
 
   // hero 
   hero.appendChild(generateHero.generateLeftPart());
+  hero.appendChild(generateHero.generateRightPart());
 
 }
 

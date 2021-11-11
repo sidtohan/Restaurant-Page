@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 100px;
+  padding: 0px 100px;
 }
 
 .main-heading{
@@ -30,18 +30,28 @@
 }
 
 #hero{
+  box-sizing: border-box;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
 }
 
 body{
+  box-sizing: border-box;
   background: url('../blue-snow.png');
+  
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  padding: 50px 0;
 }
 
 body, html{
   font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
   width: 100%;
   height: 100%;
-  padding: 0;
   margin: 0;
 }
