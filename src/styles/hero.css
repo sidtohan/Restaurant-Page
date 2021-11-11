@@ -1,0 +1,58 @@
+.left-part-hero{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 100px;
+  width: 60%;
+  height: 100%;
+}
+
+.title{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100px;
+}
+
+.sub-title{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 52px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: rgba(0, 0, 0, 0.58);
+}
+
+.lets-eat{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 35px;
+
+  width: fit-content;
+  background: #020075D4;
+  border-radius: 60px;
+}
+
+.lets-eat-text{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+
+  color: #FFFFFF;
+}
+
+.knife-fork{
+  width: auto;
+  height: 50px;
+}
