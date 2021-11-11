@@ -1,5 +1,5 @@
-import generateNav from './nav';
-import generateHero from './hero';
+import generateNav from './modules/nav';
+import generateHero from './modules/hero';
 import './styles/style.css';
 import './styles/hero.css';
 
