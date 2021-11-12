@@ -48,7 +48,7 @@
 
 .hamburger{
   margin-left: auto;
-  height: 80%;
+  height: 10vmin;
   width: auto;
 
   visibility: hidden;
@@ -56,12 +56,23 @@
   display: block;
   background: none;
   border: none;
+
+  padding: 0;
 }
 
 .hamburger > img{
-  height: 100%;
+  display: block;
+  height: 10vmin;
   width: auto;
-  vertical-align: middle;
+}
+
+
+#nav{
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0px 10vmin;
 }
 
 

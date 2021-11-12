@@ -28,7 +28,7 @@
   display: block;
   align-self: center;
 
-  height: 60vmin;
+  height: 80vmin;
   width: 50%;
 }
 
@@ -76,7 +76,7 @@
 
   width: 40vmin;
   background: #020075D4;
-  border-radius: 60px;
+  border-radius: 50vmin;
 
   border: none;
 }
