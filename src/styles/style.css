@@ -14,6 +14,7 @@ body{
   
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1.5vmin;
 
   overflow-y: scroll;
@@ -23,7 +24,6 @@ body{
 @media screen and (max-width: 720px) {
   body{
     justify-content: space-between;
-    height: 90% !important;
   }
   html{
     display: flex;

@@ -13,8 +13,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 3px 10px;
-  gap: 20px;
+  padding: 1vmin 5vmin;
+  gap: 3vmin;
 }
 
 .nav-item{
