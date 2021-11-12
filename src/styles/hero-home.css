@@ -26,9 +26,8 @@
   opacity: 0;
   animation-delay: 0.3s;
   display: block;
-  align-self: center;
 
-  height: 80vmin;
+  height: 400px;
   width: 50%;
 }
 
@@ -46,7 +45,7 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: 700;
-  font-size: 7vmin;
+  font-size: 35px;
   line-height: 1.5em;
 }
 
@@ -54,7 +53,7 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 3vmin;
+  font-size: 18px;
   line-height: 1.5em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -72,7 +71,7 @@
   gap: 0.8vmin;
   justify-content: center;
   align-items: center;
-  padding: 2vmin 4vmin;
+  padding: 10px;
 
   width: 40vmin;
   background: #020075D4;
@@ -85,7 +84,7 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 5.5vmin;
+  font-size: 28px;
   line-height: 1.5em;
 
   color: #FFFFFF;
@@ -93,7 +92,7 @@
 
 .knife-fork{
   display: block;
-  height: 5.5vmin;
+  height: 30px;
 }
 
 #hero{
@@ -114,7 +113,6 @@
   }
 
   .hero-logo{
-    height: auto;
     align-self: center;
     width: 80vmin;
   }
