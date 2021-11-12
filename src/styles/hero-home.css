@@ -1,4 +1,6 @@
 .left-part-hero{
+  animation: slide-in-hero 0.3s ease-in-out;
+  
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -8,12 +10,37 @@
   height: 100%;
 }
 
+
+@keyframes slide-in-hero {
+  0%{
+    opacity: 0;
+    transform: translateY(+60%);
+  }
+  100%{
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .hero-logo{
+  animation: slide-in-logo 0.3s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 0.3s;
   display: block;
   align-self: flex-start;
   width: 50%;
 }
 
+@keyframes slide-in-logo {
+  0%{
+    opacity: 0;
+    transform: translateX(60%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .title{
   font-family: Poppins;
   font-style: normal;
