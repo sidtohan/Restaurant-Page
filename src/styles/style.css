@@ -15,7 +15,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.5vmin;
+  gap: 3vh;
 
   overflow-y: scroll;
   padding: 3vmin 0;
