@@ -9,6 +9,7 @@ const generateNav = (() => {
   const generateNavBar = () => {
     const navBar = document.createElement('div');
     navBar.classList.add('nav-links');
+    
     const home = document.createElement('div');
     home.textContent = "Home";
     home.classList.add("home");

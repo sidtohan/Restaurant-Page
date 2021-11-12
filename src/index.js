@@ -8,45 +8,25 @@ import './styles/hero-home.css';
 import './styles/hero-menu.css'
 
 let current = "home";
-
 // Call the fucntions tab functions here, to add text content and stuff to
 // these divs
 const home = () => {
-  // creating elements
+  // hero
   const hero = document.createElement('div');
-  const nav = document.createElement('div');
-
-  hero.id = "hero";
-  nav.id = "nav";
-
-  // nav
-  nav.appendChild(generateNav.generateHeading());
-  nav.appendChild(generateNav.generateNavBar());
-
-  // hero 
   hero.appendChild(generateHeroHome.generateLeftPart());
   hero.appendChild(generateHeroHome.generateRightPart());
-
-
-  // appending the requiured sections
-  document.body.appendChild(nav);
+  hero.id = "hero";
   document.body.appendChild(hero);
 }
 
 const menu = () => {
-  const nav = document.createElement('div');
   const menuItems = document.createElement('div');
-
   menuItems.id = 'menu-items';
-  nav.id = 'nav';
-  nav.appendChild(generateNav.generateHeading());
-  nav.appendChild(generateNav.generateNavBar());
 
   for (let i = 0; i < 9; i++) {
     menuItems.appendChild(generateItemCard());
   }
 
-  document.body.appendChild(nav);
   document.body.appendChild(menuItems);
 
 }
@@ -61,24 +41,35 @@ const tabClicks = () => {
         return;
       }
       if (clicked === 'home') {
-        document.body.innerHTML = '';
+        document.body.removeChild(document.body.children[2]);
         home();
 
       } else if (clicked === "menu") {
-        document.body.innerHTML = '';
+        document.body.removeChild(document.body.children[2]);
         menu();
 
       } else {
         console.log("credits");
       }
-
-      tabClicks();
       current = clicked;
 
+      return;
     })
   }
 }
 
+// this generates navbar, only once in the beginning
+const appendNav = () => {
+  const nav = document.createElement('div');
+  nav.id = "nav";
+  nav.appendChild(generateNav.generateHeading());
+  nav.appendChild(generateNav.generateNavBar());
+  document.body.appendChild(nav);
+
+  return;
+}
+
+appendNav();
 // generate homepage by default
 window.onload = home();
 window.onload = tabClicks();
