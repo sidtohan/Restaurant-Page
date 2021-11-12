@@ -7,7 +7,7 @@ import './styles/nav.css'
 import './styles/hero-home.css';
 import './styles/hero-menu.css'
 
-let current = "Home";
+let current = "home";
 
 // Call the fucntions tab functions here, to add text content and stuff to
 // these divs
@@ -33,7 +33,7 @@ const home = () => {
   document.body.appendChild(hero);
 }
 
-const menu =  () => {
+const menu = () => {
   const nav = document.createElement('div');
   const menuItems = document.createElement('div');
 
@@ -42,7 +42,7 @@ const menu =  () => {
   nav.appendChild(generateNav.generateHeading());
   nav.appendChild(generateNav.generateNavBar());
 
-  for(let i =0; i< 9; i++){
+  for (let i = 0; i < 9; i++) {
     menuItems.appendChild(generateItemCard());
   }
 
@@ -55,25 +55,26 @@ const tabClicks = () => {
   const tabs = nav.querySelector('.nav-links').children;
   for (let tab of tabs) {
     tab.addEventListener('click', e => {
-      let clicked = e.target.textContent;
+      let clicked = e.target.classList[0];
       if (clicked === current) {
         // do nothing
         return;
       }
-
-      if (clicked === 'Home') {
+      if (clicked === 'home') {
         document.body.innerHTML = '';
         home();
 
-      } else if (clicked === "Menu") {
+      } else if (clicked === "menu") {
         document.body.innerHTML = '';
         menu();
-  
+
       } else {
-        console.log("Credits");
+        console.log("credits");
       }
+
       tabClicks();
       current = clicked;
+
     })
   }
 }

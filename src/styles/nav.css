@@ -20,4 +20,29 @@
 .nav-item{
   cursor: pointer;
   user-select: none;
+
+  display: inline-block;
+  position: relative;
 }
+
+.nav-item::after{
+  background-color: black;
+
+  content: '';
+  position: absolute; 
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  height: 2px;
+
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-item:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+
+}
+
