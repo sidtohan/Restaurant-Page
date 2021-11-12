@@ -1,6 +1,6 @@
 .left-part-hero{
   animation: slide-in-hero 0.3s ease-in-out;
-  
+
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -45,16 +45,16 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: 700;
-  font-size: 45px;
-  line-height: 70px;
+  font-size: 8vmin;
+  line-height: 1.5em;
 }
 
 .sub-title{
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 25px;
-  line-height: 45px;
+  font-size: 3.5vmin;
+  line-height: 1.5em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 
@@ -93,4 +93,25 @@
 .knife-fork{
   width: auto;
   height: 50px;
+}
+
+
+@media screen and (max-width: 800px){
+  #hero{
+    padding: 0 100px;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero-logo{
+    align-self: center;
+    width: 100%;
+  }
+
+  .left-part-hero{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
 }

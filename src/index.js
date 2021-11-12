@@ -6,6 +6,7 @@ import './styles/style.css';
 import './styles/nav.css'
 import './styles/hero-home.css';
 import './styles/hero-menu.css'
+import hamburger from './hamburger.png'
 
 let current = "home";
 // Call the fucntions tab functions here, to add text content and stuff to
@@ -61,10 +62,25 @@ const tabClicks = () => {
 
 // this generates navbar, only once in the beginning
 const appendNav = () => {
+
   const nav = document.createElement('div');
+  const heading = generateNav.generateHeading();
+  const navBar = generateNav.generateNavBar();
+  const button = generateNav.generateHamBurger();
+
+  const img = new Image();
+  img.src = hamburger;
+  button.appendChild(img);
+
   nav.id = "nav";
-  nav.appendChild(generateNav.generateHeading());
-  nav.appendChild(generateNav.generateNavBar());
+  button.addEventListener('click', () => {
+    navBar.classList.toggle('active');
+  })
+
+  nav.appendChild(heading);
+  nav.appendChild(button);
+  nav.appendChild(navBar);
+
   document.body.appendChild(nav);
 
   return;

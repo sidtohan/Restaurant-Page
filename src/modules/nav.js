@@ -1,4 +1,11 @@
 const generateNav = (() => {
+
+  const generateHamBurger = () => {
+    const button = document.createElement('button');
+    button.classList.add("hamburger");
+    return button;
+  }
+
   const generateHeading = () => {
     const heading = document.createElement('div');
     heading.textContent = "Odin Restaurant";
@@ -34,7 +41,8 @@ const generateNav = (() => {
 
   return {
     generateHeading,
-    generateNavBar
+    generateNavBar,
+    generateHamBurger
   }
 })()
 

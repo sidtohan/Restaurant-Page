@@ -43,6 +43,33 @@
 .nav-item:hover::after{
   transform: scaleX(1);
   transform-origin: bottom left;
-
 }
 
+.hamburger{
+  margin-left: auto;
+  height: 80%;
+  width: auto;
+
+  visibility: hidden;
+  user-select: none;
+  display: block;
+  background: none;
+  border: none;
+}
+
+.hamburger > img{
+  height: 100%;
+  width: auto;
+  vertical-align: middle;
+}
+
+
+@media screen and (max-width: 800px){
+  .nav-links{
+    display: none;
+  }
+
+  .hamburger{
+    visibility: visible;
+  }
+}
