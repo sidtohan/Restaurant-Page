@@ -95,19 +95,27 @@
   height: 5.5vmin;
 }
 
+#hero{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 12vmin;
+}
 
 @media screen and (max-width: 720px){
   #hero{
-    padding: 0 13vmin;
+    padding: 0 10vmin;
     flex-direction: column-reverse;
-    align-items: center;
+    justify-content: space-between;
     width: 100%;
   }
 
   .hero-logo{
-    align-self: center;
     height: auto;
-    width: 80%;
+    align-self: center;
+    width: 100vmin;
   }
 
   .left-part-hero{
