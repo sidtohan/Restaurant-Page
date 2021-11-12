@@ -40,19 +40,20 @@ const tabClicks = () => {
         // do nothing
         return;
       }
+      let length = document.body.children.length;
+
       if (clicked === 'home') {
-        document.body.removeChild(document.body.children[2]);
+        document.body.removeChild(document.body.children[length - 1]);
         home();
 
       } else if (clicked === "menu") {
-        document.body.removeChild(document.body.children[2]);
+        document.body.removeChild(document.body.children[length - 1]);
         menu();
 
       } else {
         console.log("credits");
       }
       current = clicked;
-
       return;
     })
   }
