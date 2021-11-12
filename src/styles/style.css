@@ -23,7 +23,7 @@ body{
 
 @media screen and (max-width: 720px) {
   body{
-    justify-content: space-between;
+    padding: 0;
   }
   html{
     display: flex;
