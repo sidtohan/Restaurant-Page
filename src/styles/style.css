@@ -5,7 +5,7 @@
   display: flex;
   width: 100%;
   align-items: center;
-  padding: 0px 100px;
+  padding: 0px 12vmin;
 }
 
 #hero{
@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 100px;
+  padding: 0 12vmin;
 }
 
 body{
@@ -23,10 +23,21 @@ body{
   
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  justify-content: center;
+  gap: 1.5vmin;
 
   overflow-y: scroll;
-  padding: 50px 0;
+  padding: 3vmin 0;
+}
+
+@media screen and (max-width:720px) {
+  body{
+    justify-content: flex-start;
+    height: fit-content !important;
+  }
+  html{
+    height: fit-content;
+  }
 }
 
 body, html{

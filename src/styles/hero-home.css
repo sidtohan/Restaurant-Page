@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 50px 0;
+  padding: 1.5em 0;
   width: 50%;
   height: 100%;
 }
@@ -45,7 +45,7 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: 700;
-  font-size: 8vmin;
+  font-size: 7vmin;
   line-height: 1.5em;
 }
 
@@ -53,7 +53,7 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 3.5vmin;
+  font-size: 3vmin;
   line-height: 1.5em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -65,15 +65,15 @@
   cursor: pointer;
   user-select: none;
 
-  margin-top: 30px;
+  margin-top: 3vmin;
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 0.8vmin;
   justify-content: center;
   align-items: center;
-  padding: 22px 35px;
+  padding: 2vmin 4vmin;
 
-  width: fit-content;
+  width: 40vmin;
   background: #020075D4;
   border-radius: 60px;
 
@@ -84,21 +84,21 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 60px;
+  font-size: 5.5vmin;
+  line-height: 1.5em;
 
   color: #FFFFFF;
 }
 
 .knife-fork{
-  width: auto;
-  height: 50px;
+  display: block;
+  height: 5.5vmin;
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 720px){
   #hero{
-    padding: 0 100px;
+    padding: 0 13vmin;
     flex-direction: column-reverse;
     align-items: center;
     width: 100%;
@@ -106,7 +106,8 @@
 
   .hero-logo{
     align-self: center;
-    width: 100%;
+    height: auto;
+    width: 80%;
   }
 
   .left-part-hero{
