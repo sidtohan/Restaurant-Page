@@ -6,7 +6,7 @@ import './styles/style.css';
 import './styles/nav.css'
 import './styles/hero-home.css';
 import './styles/hero-menu.css'
-import hamburger from './hamburger.png'
+import hamburger from './hamburger.svg'
 
 let current = "home";
 // Call the fucntions tab functions here, to add text content and stuff to

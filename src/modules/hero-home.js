@@ -1,5 +1,5 @@
 import KnifeFork from '../knife-fork.svg'
-import HeroImage from '../hero-logo.png'
+import HeroImage from '../hero-logo.svg'
 
 const generateHeroHome = (() => {
   const generateLeftPart = () => {
